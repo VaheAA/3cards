@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", "sans-serif";
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+  }
+main {
+    width: 90%;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 95%);
+}
+.cars {
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+}
+.cars_section {
+    height: 350px;
+}
+.card1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+} 
+.card3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ h2 {
+    text-transform: uppercase;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+p {
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    line-height: 1.2;
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+a {
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 7px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Big Shoulders Display', cursive;
+}
+a:active {
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+.cta {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+img {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+}
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.cta1 > a{
+    color: hsl(31, 77%, 52%);
+}
+.cta2 > a{
+    color: hsl(184, 100%, 22%);
+}
+.cta3 > a{
+   color: hsl(179, 100%, 13%);
+}
+.cta1 > a:active,
+.cta2 > a:active,
+.cta3 > a:active {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .cars {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card1 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+
+    } 
+    .card3 {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+
+    }
+    .cars_section {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
